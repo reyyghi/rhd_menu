@@ -1,0 +1,278 @@
+/* Nice font for button from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* width */
+::-webkit-scrollbar {
+    /* width: 10px; */
+    
+    display: none;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;
+    border-radius: 10px; */
+    
+    display: none;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    /* background: #222831;
+    border-radius: 10px; */
+    
+    display: none;
+}
+
+#container {
+    position: absolute;
+    height: auto;
+    top: 20%;
+    right: 20%;
+    border-radius: 5px;
+    background: transparent !important;
+}
+
+
+#search-container {
+	/* margin-top: -10px;
+	margin-bottom: 10px; */
+    position: absolute;
+    height: auto;
+    border-radius: 5px;
+	z-index: 1;
+    background: transparent !important;
+    /* max-height: 80vh; */
+}
+
+.search-container i {
+  position: absolute;
+  left: 10px; /* Sesuaikan jarak ikon dari sisi kiri */
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  
+}
+
+#search-input {
+  width: 390px;
+  margin-left: 30px;
+  animation: buttonIn 1.5s;
+  background: rgba(247, 222, 1, 0);
+  padding: 0.60rem;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: white;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+}
+.title {
+    cursor: default;
+    gap: 10px;
+    display: flex;
+    flex-direction: row !important;
+}
+
+#buttons {
+    max-height: 75vh;
+    width: 460px;
+    overflow-x: none;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+html,
+body {
+    background: transparent !important;
+}
+
+
+.search-container {
+  width: auto;
+  height: 10%;
+  background: rgb(22, 22, 21);
+  color: white;
+  margin: auto;
+  position: relative;
+  top: 10%;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  padding: 0.45rem;
+  border-radius: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0rem 0rem 0.5rem 0.05rem #e5ff00a6; */
+  cursor: default;
+  animation: buttonIn 1.5s;
+}
+
+.button {
+  width: auto;
+  height: 10%;
+  background: rgb(22, 22, 21);
+  color: white;
+  margin: auto;
+  position: relative;
+  top: 10%;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  padding: 0.45rem;
+  border-radius: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0rem 0rem 0.5rem 0.05rem #e5ff00a6; */
+  cursor: pointer;
+  animation: buttonIn 1.5s;
+}
+
+/* .button {
+    width: auto;
+    height: 10%;
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.0rem 0.0rem 0.1rem 0.05rem #000000;
+    cursor: pointer;
+    animation: buttonIn 1.5s;
+    background-color: #191b1d;
+} */
+
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: left;
+}
+
+.button:hover {
+  /* background-color: #c8dc14; */
+  transform: scale(1.02);
+}
+
+.title {
+  width: auto;
+  height: 10%;
+  background: rgb(22, 22, 21);
+  color: white;
+  margin: auto;
+  position: relative;
+  top: 10%;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  padding: 0.45rem;
+  border-radius: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0rem 0rem 0.5rem 0.05rem #e5ff00a6; */
+  animation: buttonIn 1.5s;
+}
+
+/* .title {
+    width: auto;
+    height: 10%;
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.0rem 0.0rem 0.1rem 0.05rem #000000;
+    animation: buttonIn 1.5s;
+    background-color: #191b1d;
+} */
+
+.title > div.column > div.header {
+  text-decoration: underline !important;
+}
+
+.disabled {
+  background: rgba(102, 102, 102, 0.9) !important;
+  cursor: default;
+}
+
+div > .text {
+  flex-direction: column;
+  font-size: 0.75rem;
+  overflow: hidden;
+}
+
+/* div > .text {
+    color: rgb(232, 229, 229);
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    overflow: hidden;
+    font-weight: 300;
+    line-height: 0.5cm;
+} */
+
+div > .header {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: left;
+  overflow: wrap;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+/* div > .header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    overflow: wrap;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    overflow: hidden;
+} */
+
+@keyframes buttonIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+/* .search-container input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid rgba(100, 149, 237, 1);
+} */
